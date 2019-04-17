@@ -1,0 +1,5 @@
+#!/bin/bash
+# Simple bash script that'll get the full path name of a file, and copy it to clipboard.
+# Useful for notetaking apps with markdown to add pictures or screenshots.
+
+readlink -n -f $1 | xclip -sel clip
